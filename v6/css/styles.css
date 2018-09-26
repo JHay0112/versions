@@ -40,7 +40,7 @@ div.index {
 
 @media only screen and (min-width: 768px) {
     div.index {
-        border-radius: 17% / 50%;
+        border-radius: 18.5% / 50%;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
     }
@@ -71,9 +71,14 @@ h1#index-title {
         font-size: 50pt;
         text-align: left;
     }
+
+    img#index-profile {
+        border-radius: 50% !important;
+    }
 }
 
 img#index-profile {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
