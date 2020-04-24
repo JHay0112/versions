@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JHay0112 - Home</title>
+		<link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/nav.css">
+        <link rel="icon" href="images/logo.png">
+        <script src="code.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109227996-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments)};
+            gtag('js', new Date());
+
+            gtag('config', 'UA-109227996-1');
+        </script>
+        <script src="jquery-3.2.1.slim.min.js"></script>
+        <script>
+            var isVisible = false;
+            $(window).scroll(function(){
+                var shouldBeVisible = $(window).scrollTop()>100;
+                if (shouldBeVisible && !isVisible) {
+                    isVisible = true;
+                    $('#top-button').show();
+                } else if (isVisible && !shouldBeVisible) {
+                    isVisible = false;
+                    $('#top-button').hide();
+                }
+            });
+        </script>
+        
+	</head>
+	<body onload="newBanner(), newFact()">
+        
+        <p id="top"></p>
+        
+        <div id="banner"></div>
+        
+        <h1 style="color: white; position: absolute; top: 80px; left: 0; right: 0; text-align: center;">JHay0112.github.io</h1>
+        
+        <div class="content" style="margin-top: 10px;">
+        
+            <a href="tc.html" class="section" style="background: blue;" title="T&C's">
+                <h2>Welcome</h2>
+                <hr>
+                <p>to jhay0112.github.io</p>
+            </a>
+            
+            <div class="section" style="background: grey;">
+                <h2>Hosted by Github Pages</h2>
+            </div>
+
+            <div class="section" style="background: RGBA(0, 0, 0, 0.8);">
+                <h2>Used for the testing and displaying of mock up static websites over multiple devices.</h2>
+            </div>
+
+            <div class="section" style="background: grey;">
+                <h2>HTML, CSS and client side JavaScript</h2>
+            </div>
+
+            <div class="section" style="background: RGBA(0, 0, 0, 0.8);">
+                <h2>Created by Jordan Hay in late 2017</h2>
+            </div>
+
+            <a class="section" style="background: blue;" target="_blank" href="https://github.com/JHay0112/JHay0112.github.io" title="Github.com  - JHay0112">
+                <h2>Want to see the script behind this? Have a look in the Github repository, just click on this blue section</h2>
+            </a>
+            
+            <div class="section" style="background: RGBA(0, 0, 0, 0.8);">
+                <h2>Current time and date:</h2>
+                <h2 id="dateDiv"></h2>
+            </div>
+            
+            <div class="section" style="background: grey;">
+                <h2>Contact us here</h2>
+                <hr>
+                <form action="https://formspree.io/jhayweb@gmail.com" method="POST">
+                    <input type="text" name="Name" placeholder="Your Name">
+                    <input type="email" name="Reply to" placeholder="Your Email">
+                    <textarea id="message" type="text" name="Message" placeholder="Your Message" rows="5"></textarea>
+                    <br>
+                    <input id="submit" type="submit" value="Send">
+                    <input type="checkbox" name="Bug/Error Report" id="checkbox">Error/Bug Report
+                </form>
+            </div>
+
+            <a class="section" style="background: blue;" href="https://wakatime.com/share/@JHay0112/f446cbe8-e70e-4570-8415-ab474b94ae1c.svg" target="_blank">
+                <figure style="width: 100%; height: 100%; padding: 0; margin: 0;">
+                    <figcaption>
+                        <h2>Latest Programming Activity via WakaTime</h2>
+                        <p>(Click on this blue section to view larger version)</p>
+                        <hr>
+                    </figcaption>
+                    <embed style="width: 100%; height: 100%; padding: 0; margin: 0;" src="https://wakatime.com/share/@JHay0112/f446cbe8-e70e-4570-8415-ab474b94ae1c.svg">
+                </figure>
+            </a>
+            
+            <div class="section" style="background: grey;">
+                <h2>Join the Mailing list</h2>
+                <hr>
+                <form action="https://formspree.io/jhayweb@gmail.com" method="POST">
+                    <input type="text" name="Name" placeholder="Your Name">
+                    <input type="email" name="Reply to" placeholder="Your Email">
+                    <hr>
+                    <p>Tick the boxes of what you would like E-Mailed to you</p>
+                    <hr>
+                    <input type="checkbox" name="Updates" id="checkbox" value="">Updates of what's new on the website
+                    <br>
+                    <input type="checkbox" name="Special Offers" id="checkbox">Other Special Offers
+                    <br>
+                    <hr>
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+            </div>
+            
+            <div class="section" style="background: RGBA(0, 0, 0, 0.8);">
+                <h2>Random 'Fun Fact'</h2>
+                <hr>
+                <p id="funFact"></p>
+                <hr>
+                <a onclick="newFact()" class="blue" style="max-width: 100%; cursor: pointer;"><p>Don't like this fact? Get a new one by clicking on this blue section.</p></a>
+            </div>
+            
+        </div>
+        
+        <nav class="top">
+            <a href="index.html" class="active">Home</a>
+        </nav>
+        
+        <a class="top-button" href="#top" title="Back to the Top" id="top-button">
+            <img src="images/arrow.png" width="20px">
+        </a>
+  
+	</body>
+</html>

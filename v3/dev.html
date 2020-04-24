@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dev Blog</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/nav.css">
+        <link rel="icon" href="images/logo.png">
+        <script src="scripts/code.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109227996-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments)};
+            gtag('js', new Date());
+
+            gtag('config', 'UA-109227996-1');
+        </script>
+        <script src="scripts/jquery-3.2.1.slim.min.js"></script>
+        <script>
+            var isVisible = false;
+            $(window).scroll(function(){
+                var shouldBeVisible = $(window).scrollTop()>100;
+                if (shouldBeVisible && !isVisible) {
+                    isVisible = true;
+                    $('#top-button').show();
+                } else if (isVisible && !shouldBeVisible) {
+                    isVisible = false;
+                    $('#top-button').hide();
+                }
+            });
+        </script>
+    </head>
+    <body onload="newBanner()">
+
+        <p id="top"></p>
+
+        <div id="banner"></div>
+
+        <h1 style="color: white; position: absolute; top: 80px; left: 0; right: 0; text-align: center;">Dev Blog</h1>
+
+        <div class="content">
+            <div class="section" style="background-color: RGBA(0, 0, 0, 0.8); margin: 0; padding: 0; width: 100%;">
+                <a href="dev.html" class="section active nav2" style=" width: auto; padding: 14px 16px; margin: 5px 5px;">Dev Blog</a>
+                <a href="dev-search.html" class="nav2 section" style="width: auto; padding: 14px 16px; margin: 5px 5px;">Search</a>
+            </div>
+            <div class="post">
+                <div class="post-link clear" id="No_Version_2"></div>
+                <h2>Version 4 Announcement (No Version)</h2>
+                <p>17/04/2018</p>
+                <hr>
+                <p>Entire website will be remade, with Bootstrap, that is all.</p>
+                <br>
+                <p>- Jordan</p>
+            </div>
+            <div class="post">
+                <div class="post-link clear" id="3.2.2"></div>
+                <h2>New Photos (v3.2.2)</h2>
+                <p>13/03/2018</p>
+                <hr>
+                <p>Photos replaced with better ones</p>
+                <br>
+                <p>- Jordan</p>
+            </div>
+            <div class="post">
+                <div class="post-link clear" id="3.2.1"></div>
+                <h2>A more mobile friendly home page (v3.2.1)</h2>
+                <p>15/02/2018</p>
+                <hr>
+                <p>For all of you on mobile, the home page will look a whole heap nicer. That's all.</p>
+                <br>
+                <p>- Jordan</p>
+            </div>
+            <div class="post">
+                <div class="post-link clear" id="3.2"></div>
+                <h2>The Programming Section Begins! (v3.2)</h2>
+                <p>07/02/2018</p>
+                <hr>
+                <p>Yes, a section all about programming, it will be similar to the Development Blog in the form of style but the topic will be about programming! It will make more sense when the first real post is released. Click on the menu item titled "Programming" to view the Programming section.</p>
+                <br>
+                <p>- Jordan</p>
+            </div>
+            <div class="post">
+                <div class="post-link clear" id="3.1.1"></div>
+                <h2>New Photos! (v3.1.1)</h2>
+                <p>06/02/2018</p>
+                <hr>
+                <p>New photos have been introduced to the Photgraphy section and some other behind the scenes work has happened. Click on the photography section's menu link to see the new glorious 4K photos.</p>
+                <br>
+                <p>- Jordan</p>
+            </div>
+            <div class="post">
+                <div class="post-link clear" id="3.1"></div>
+                <h2>Photography Section Re-released (v3.1)</h2>
+                <p>23/01/2018</p>
+                <hr>
+                <p>The Photography Section has been re-released. Check it out by clicking on the menu link saying "Photography".</p>
+                <br>
+                <p>- Jordan</p>
+            </div>
+            <div class="post">
+                <div class="post-link clear" id="3.0.3"></div>
+                <h2>Dev Blog Search Overhaul (v3.0.3)</h2>
+                <p>22/01/2018</p>
+                <hr>
+                <p>Dev Blog - Search Overhauled, actually looks pretty good now, I guess that is the end of the overhaul of current pages</p>
+                <br>
+                <p>- Jordan</p>
+            </div>
+            <div class="post">
+                <div class="post-link clear" id="3.0.2"></div>
+                <h2>New Favicon and Dev Blog Overhaul (v3.0.2)</h2>
+                <p>22/01/2018</p>
+                <hr>
+                <img src="images/logo.png" width="7%" style="float: right">
+                <p>New favicon (the little icon you see in the tab by the page title) has been introduced. Also as you can see I have overhauled the Dev Blog, the search section of the Dev Blog will be replaced soon</p>
+                <br>
+                <p>- Jordan</p>
+            </div>
+            <div class="post">
+                <div class="post-link clear" id="3.0.1"></div>
+                <h2>Banners Overhaul (v3.0.1)</h2>
+                <p>20/01/2018</p>
+                <hr>
+                <p>All the old banners have been removed and replaced (From left to right, Devil's Punchbowl, Otira Viaduct and Ferns)</p>
+                <br>
+                <div class="blue" style="background-color: RGBA(0, 0, 0, 0); padding: 0; margin: 0;">
+                    <a class="sec2" href="images/banners/banner1.jpg" target="_blank">
+                        <img src="images/banners/banner1.jpg" style="width: 100%;">
+                    </a>
+                    <a class="sec2" href="images/banners/banner2.jpg" target="_blank">
+                        <img src="images/banners/banner2.jpg" style="width: 100%;">
+                    </a>
+                    <a class="sec2" href="images/banners/banner3.jpg" target="_blank">
+                        <img src="images/banners/banner3.jpg" style="width: 100%;">
+                    </a>
+                </div>
+                <br>
+                <p>- Jordan</p>
+            </div>
+            <div class="post">
+                <div class="post-link clear" id="3.0"></div>
+                <h2>Version 3 (v3.0)</h2>
+                <p>20/01/2018</p>
+                <hr>
+                <p>For a while now I have been working on websites for other people but I am finally back, as you will have noticed the Home page has changed a lot. This is only the start of the changes though, I am planning an overhaul for most of the pages to create a more aesthetically pleasing website.</p>
+                <br>
+                <p>- Jordan</p>
+            </div>
+            <div class="post">
+                <div class="post-link clear" id="No_Version_1"></div>
+                <h2>Conflict Errors and Happy New Year (No Version)</h2>
+                <p>01/01/2018</p>
+                <hr>
+                <p>Happy New year to everyone who bothers to look at the development blog, and for anyone who bothers to look at my <a href="https://github.com/JHay0112/JHay0112.github.io" target="_blank">Github Repository</a> I just had a heap of weird conflict errors between my computer files and my Github Repository.</p>
+                <br>
+                <p>- Jordan</p>
+            </div>
+            <div class="post">
+                <div class="post-link clear" id="2.2.5"></div>
+                <h2>Roll Back (v2.2.5)</h2>
+                <p>19/12/2017</p>
+                <hr>
+                <p>Just had to roll everything back due to a major issue with the secret thing.</p>
+                <br>
+                <p>- Jordan</p>
+            </div>
+            <div class="post">
+                <div class="post-link clear" id="2.2.4"></div>
+                <h2>Minor Changes (v2.2.4)</h2>
+                <p>19/12/2017</p>
+                <hr>
+                <p>Just a couple of minor changes today, nothing of concern. Except something major did happen on this website, except for the fact that it is a secret and you'll just have to find out.</p>
+                <br>
+                <p>I'm building a website for a friend of mine who runs a YouTube channel, check it out here <a href="https://tgu-media-films.github.io/" target="_blank">https://tgu-media-films.github.io/</a></p>
+                <br>
+                <p>- Jordan</p>
+            </div>
+            <div class="post">
+                <div class="post-link clear" id="2.2.3"></div>
+                <h2>New Banners! (v2.2.3)</h2>
+                <p>18/12/2017</p>
+                <hr>
+                <p>Two new banners have been introduced, a shot of Otago Harbour and another picture of a random plant. Nothing really major I guess, may be a new one soon of Otago Railway Station, the second most photographed building in the southern hemisphere.</p>
+                <br>
+                <p style="text-decoration: underline;"><em>Images no longer available due to website overhaul</em></p>
+                <br>
+                <p>- Jordan</p>
+            </div>
+            <div class="post">
+                <div class="post-link clear" id="2.2.2"></div>
+                <h2>Bug Fix (v2.2.2)</h2>
+                <p>17/12/2017</p>
+                <hr>
+                <p>Just an issue with linking to ID's.</p>
+                <br>
+                <p>- Jordan</p>
+            </div>
+            <div class="post">
+                <div class="post-link clear" id="2.2.1"></div>
+                <h2>Slow load protection (v2.2.1)</h2>
+                <p>17/12/2017</p>
+                <hr>
+                <p>Very minor update and not much to it. Basically put it stops the page moving around while the banner at the top of the page loads. All you'll notice is a grey box where the banner should be while it loads.</p>
+                <br>
+                <p>- Jordan</p>
+            </div>
+            <div class="post">
+                <div class="post-link clear" id="2.2"></div>
+                <h2>Dev Blog Search Created (v2.2)</h2>
+                <p>13/12/2017</p>
+                <hr>
+                <p>There has been a new addition to the development blog to help in the future for finding previous changes to the website, it's a searchable table system and can be found <a href="dev.html">here</a>. The search system is based off of a tutorial by W3 Schools, you can find it <a href="https://www.w3schools.com/howto/howto_js_filter_table.asp">here</a>.</p>
+                <br>
+                <p>- Jordan</p>
+            </div>
+            <div class="post"> 
+                <div class="post-link clear" id="2.1.1"></div>
+                <h2>Minor Changes (v2.1.1)</h2>
+                <p>12/12/2017</p>
+                <hr>
+                <p>Some minor fixes and random additional features added today, including a new banner of a Lego model of a Caterham 7 620 R and a new button on the front page that I think looks pretty cool.</p>
+                <br>
+                <p style="text-decoration: underline;"><em>Images no longer available due to website overhaul</em></p>
+                <br>
+                <p>- Jordan</p>
+            </div>
+            <div class="post">
+                <div class="post-link clear" id="2.1"></div>
+                <h2>Dev Blog Created (v2.1)</h2>
+                <p>11/12/2017</p>
+                <hr>
+                <p>This website has been updated and something relatively important has happened, a 'blog' of sorts has been created to highlight changes made on the website, much better than the version log on Github, which looks quite muddled, no thanks to me. Also, the photography section has temporarily disappeared while in development.</p>
+                <br>
+                <p>- Jordan</p>
+            </div>
+        </div>
+
+        <nav class="top">
+            <a href="index.html">Home</a>
+            <a href="programming/home.html">Programming</a>
+            <a href="photo/page1.html">Photography</a>
+            <a href="dev.html" class="active">Dev Blog</a>
+        </nav>
+
+        <a class="top-button" href="#top" title="Back to the Top" id="top-button">
+            <img src="images/arrow.png" width="20px">
+        </a>
+
+    </body>
+</html>
