@@ -18,7 +18,7 @@ nav {
     position: relative;
     height: 250px;
     top: -60px;
-    background-image: url(../images/background.jpg);
+    background-image: url(images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
